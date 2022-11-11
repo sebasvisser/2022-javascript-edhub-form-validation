@@ -1,0 +1,76 @@
+body {
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    ". . ."
+    ". . ."
+    ". form-block ."
+    ". . ."
+    ". . .";
+    align-items: stretch;
+    justify-items: stretch;
+    width: 100vw;
+    height: 100vh;
+}
+
+.form-block {
+    grid-area: form-block;
+    background-color: #a5eac1;
+    align-self: stretch;
+    justify-self: stretch;
+    display:grid;
+    padding: 15% 7% 15% 7%;
+    border-radius: 5px;
+}
+
+
+#form-title-block {
+
+}
+
+#username-block {
+
+}
+
+#password-block {
+
+}
+
+h2 {
+    font-family: Avenir;
+    font-size: 35px;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+}
+
+input:focus {
+    outline: 3px solid #7FCDD9;
+}
+
+label{
+    font-family: Avenir;
+    font-weight: bold;
+}
+
+.form-block > div {
+    align-self: center;
+    justify-self: stretch;
+}
+
+#uname-warning, #pword-warning {
+    color: red;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Avenir;
+}
